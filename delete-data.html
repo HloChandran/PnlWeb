@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delete Data — PnL.</title>
+  <meta name="description" content="Request deletion of specific data from your PnL. Trade Journal account without closing your account." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="index.html">PnL.</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#features">Features</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+    <li><a href="mailto:chandranappdeveloper@gmail.com" class="nav-cta">Contact Us</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="policy-hero">
+  <div class="badge">🧹 Data Deletion</div>
+  <h1>Delete Your Data</h1>
+  <p class="policy-meta">PnL. Trade Journal &nbsp;·&nbsp; Package: com.chandran.pnl &nbsp;·&nbsp; Last Updated: June 27, 2025</p>
+</div>
+
+<!-- CONTENT -->
+<div class="policy-content">
+
+  <div class="policy-section">
+    <div class="policy-section-header">
+      <div class="policy-icon ic-blue">ℹ️</div>
+      <h2>Delete Data Without Closing Your Account</h2>
+    </div>
+    <p>PnL. gives you control over your data. You can delete specific types of data — such as your trade history or cloud backup — without deleting your account. Your account and login credentials remain active so you can continue using the app.</p>
+    <p style="margin-top:0.75rem;">If you want to close your account entirely, see the <a href="delete-account.html">Delete Account</a> page instead.</p>
+  </div>
+
+  <div class="policy-section">
+    <div class="policy-section-header">
+      <div class="policy-icon ic-red">📊</div>
+      <h2>Delete Trade History (All Trades)</h2>
+    </div>
+    <p>To permanently delete all your trade records from the app:</p>
+    <ul>
+      <li>Open the <strong>PnL.</strong> app.</li>
+      <li>Go to the <strong>Profile</strong> tab.</li>
+      <li>Tap <strong>Settings → Manage Data</strong>.</li>
+      <li>Select <strong>Clear All Trades</strong> and confirm.</li>
+    </ul>
+    <p style="margin-top:0.75rem;">This deletes all trade data from the <strong>local SQLite database</strong> on your device. If you have a cloud backup, the backup is not automatically removed — follow the steps below to delete the cloud backup separately.</p>
+    <p style="margin-top:0.5rem;"><strong>Retention:</strong> Deleted immediately. No retention period.</p>
+  </div>
+
+  <div class="policy-section">
+    <div class="policy-section-header">
+      <div class="policy-icon ic-cyan">☁️</div>
+      <h2>Delete Cloud Backup</h2>
+    </div>
+    <p>Your optional cloud backup (stored in Google Cloud Firestore under your user ID) can be deleted separately:</p>
+    <ul>
+      <li>Open the <strong>PnL.</strong> app.</li>
+      <li>Go to the <strong>Profile</strong> tab.</li>
+      <li>Tap <strong>Cloud Backup</strong>.</li>
+      <li>Select <strong>Delete Cloud Backup</strong> and confirm.</li>
+    </ul>
+    <p style="margin-top:0.75rem;">This permanently removes all trade records and settings stored in Firestore under your account. Your local on-device data is unaffected.</p>
+    <p style="margin-top:0.5rem;"><strong>Retention:</strong> Deleted immediately from Firestore. No retention period.</p>
+  </div>
+
+  <div class="policy-section">
+    <div class="policy-section-header">
+      <div class="policy-icon ic-amber">⚙️</div>
+      <h2>Reset App Settings</h2>
+    </div>
+    <p>To reset your app preferences (currency, discipline rules, strategies list, asset classes) to defaults:</p>
+    <ul>
+      <li>Open the <strong>PnL.</strong> app.</li>
+      <li>Go to <strong>Profile → Settings → Reset Settings</strong>.</li>
+      <li>Confirm the reset.</li>
+    </ul>
+    <p style="margin-top:0.75rem;">This clears all stored preferences from the local database and GetStorage. It does not delete your trade history or cloud backup.</p>
+  </div>
+
+  <div class="policy-section">
+    <div class="policy-section-header">
+      <div class="policy-icon ic-lblue">✉️</div>
+      <h2>Request Data Deletion via Email</h2>
+    </div>
+    <p>If you cannot access the app or need assistance deleting a specific type of data, contact us by email:</p>
+    <ul>
+      <li>Email: <a href="mailto:chandranappdeveloper@gmail.com">chandranappdeveloper@gmail.com</a></li>
+      <li>Subject: <strong>Data Deletion Request — PnL.</strong></li>
+      <li>Include your registered email address and the specific data you want deleted (e.g., trade history, cloud backup, profile photo).</li>
+      <li>We will process your request within <strong>30 days</strong> and confirm by email.</li>
+    </ul>
+  </div>
+
+  <div class="policy-section">
+    <div class="policy-section-header">
+      <div class="policy-icon ic-green">✅</div>
+      <h2>Data Deleted vs. Data Retained</h2>
+    </div>
+
+    <p><strong>Data deleted upon your request:</strong></p>
+    <ul>
+      <li>Trade records (symbol, direction, quantity, prices, P&amp;L, strategy, emotion, comments, dates)</li>
+      <li>Cloud backup files stored in Google Firestore under your user ID</li>
+      <li>Profile photo (if uploaded)</li>
+      <li>Custom strategies list and asset classes</li>
+      <li>Discipline rule settings stored in the cloud</li>
+    </ul>
+
+    <p style="margin-top:1rem;"><strong>Data that may be retained after deletion:</strong></p>
+    <ul>
+      <li><strong>Local device data</strong> — Data stored in the SQLite database on your device is separate from cloud data. Delete it via the app or uninstall PnL. to remove it.</li>
+      <li><strong>Crash reports (Firebase Crashlytics)</strong> — Anonymised logs retained for up to <strong>90 days</strong>. Not linked to your identity after deletion.</li>
+      <li><strong>Aggregated analytics (Firebase Analytics)</strong> — Anonymised usage metrics not linked to your account, retained per Google's standard policy.</li>
+      <li><strong>Legal records</strong> — Deletion confirmation records may be kept for up to <strong>5 years</strong> as required by applicable Indian law.</li>
+    </ul>
+  </div>
+
+  <div class="policy-section">
+    <div class="policy-section-header">
+      <div class="policy-icon ic-green">🔒</div>
+      <h2>Guest Mode Users</h2>
+    </div>
+    <p>If you use PnL. in <strong>Guest Mode</strong>, all data is stored locally on your device only — no cloud backup is created. To delete all data, simply <strong>uninstall the PnL. app</strong>. No email request is needed.</p>
+  </div>
+
+  <div class="policy-section">
+    <div class="policy-section-header">
+      <div class="policy-icon ic-lblue">❓</div>
+      <h2>Questions</h2>
+    </div>
+    <p>For questions about your data or deletion requests, contact us at <a href="mailto:chandranappdeveloper@gmail.com">chandranappdeveloper@gmail.com</a>. We will respond within 7 business days.</p>
+    <p style="margin-top:0.75rem;">To close your account entirely, visit the <a href="delete-account.html">Delete Account</a> page.</p>
+  </div>
+
+</div>
+
+<!-- CONTACT -->
+<div class="contact-section">
+  <h2>Need help with your data?</h2>
+  <p>Use the in-app options above or email us and we'll handle your request within 30 days.</p>
+  <a class="contact-email" href="mailto:chandranappdeveloper@gmail.com">
+    ✉️ &nbsp;chandranappdeveloper@gmail.com
+  </a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <a class="footer-logo" href="index.html">PnL.</a>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms &amp; Conditions</a></li>
+      <li><a href="delete-account.html">Delete Account</a></li>
+      <li><a href="delete-data.html">Delete Data</a></li>
+    </ul>
+    <p class="footer-copy">© 2025 PnL. Trade Journal · Botree Technologies · All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
